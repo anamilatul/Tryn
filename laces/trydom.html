@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar DOM JS</title>
+    <style>
+      .red {
+        padding-top: 20px;
+      }
+      .black {
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <img onClick="berubah()" src="kucing.jpg" alt="" width="300px" id="gambar" class="black" />
+    <div id="box1"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>javascript</li>
+    </ul>
+
+    <!-- <div id="box1">
+      <div id="p1">Paragraf 1</div>
+    </div> -->
+    <!-- <h3>Belajar yokk</h3>
+    <input type="text" value="name" id="input" />
+    <input type="submit" id="submit" value="submit" />
+    Namaku <span id="p1"></span> -->
+
+    <script>
+      //selector
+      //id
+      document.getElementById("box1").innerHTML = "Semangat woi";
+      //class;mulai dr 0
+      var boxes = document.getElementsByClassName("boxes");
+      boxes[0].innerHTML = "Kamu pasti bisa";
+      boxes[1].innerHTML = "semangat lagi";
+      boxes[2].innerHTML = "semangat terus";
+      boxes[3].innerHTML = "GANBATTE";
+      //tag
+      var list = document.getElementsByTagName("li");
+      list[0].innerHTML = "Laravel";
+      list[1].innerHTML = "Vue Js";
+      list[2].innerHTML = "Jquery";
+
+      //queryselectorAll
+      document.querySelectorAll("#box1")[0].innerHTML = "semangat terus";
+      document.querySelectorAll(".boxes")[0].innerHTML = "SEMANGAT POKONYA";
+
+      //   //add element
+      //   var elemen = document.createElement("h2");
+      //   var text = document.createTextNode("Belajar terus");
+      //   var box = document.getElementById("box1");
+      //   elemen.appendChild(text);
+      //   box.appendChild(elemen); //manggil elemen dan masukin ke id box
+
+      //remove elemen
+      //   box.removeChild(elemen);
+
+      //edit
+      //   var elemen2 = document.createElement("h3");
+      //   var text2 = document.createTextNode("Belajar LAGI");
+      //   elemen2.appendChild(text2);
+      //   var p1 = document.getElementById("p1");
+      //   box.replaceChild(elemen2, p1);
+
+      //   var img = document.getElementById("gambar");
+      //   img.width = 500;
+
+      //   //   img.setAttribute("class", "red");
+      //   img.className += " red";
+
+      //   var input = document.getElementById("input");
+      //   input.value = "namaku";
+
+      //   input.style.border = "2px solid blue";
+      //   input.style.backgroundColor = "lightgrey";
+
+      //   //event
+      //   function berubah() {
+      //     img.style.width = "700px";
+      //   }
+      //   //   //jika onClick tidak ada ditagnya
+      //   //   input.onclick = function () {
+      //   //     berubah2();
+      //   //   };
+      //   function berubah2() {
+      //     input.style.backgroundColor = "yellow";
+      //   }
+
+      //   //   input.addEventListener("click", berubah2);
+
+      //   //mouse diatas langsung berubah
+      //   input.addEventListener("mouseenter", berubah2);
+      //   input.addEventListener("mouseleave", function () {
+      //     input.style.backgroundColor = "lightgrey";
+      //   });
+
+      //   var submit = document.getElementById("submit");
+      //   var span = document.getElementById("p1");
+      //   submit.onclick = function () {
+      //     var text = input.value;
+      //     span.innerHTML = text;
+      //   };
+    </script>
+  </body>
+</html>

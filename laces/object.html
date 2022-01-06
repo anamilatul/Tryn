@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBJECT</title>
+  </head>
+  <body>
+    <h1>Belajar OBJECT Yukk</h1>
+    <img src="kucing.jpg" width="300px" />
+    <br />
+    Nama : <span id="nama"></span> Umur : <span id="umur"></span> Sifat : <span id="sifat"></span>
+    <div id="box"></div>
+    <script>
+      //buat object
+      //1.
+      var intro = {
+        nama: "Ana",
+        umur: 19,
+        sifat: "baik hati",
+        mydata: function () {
+          return "Nama : " + this.nama + " Umur : " + this.umur;
+        },
+        //ubah nama
+        setData: function (name) {
+          this.nama = name;
+        },
+      };
+
+      //mutable ; object asli jg bisa berubah
+      var duo = intro;
+      duo.nama = "Mesi";
+      document.getElementById("box").innerHTML = duo.nama;
+
+      //   //2.
+      //   var dua = new Object();
+      //   dua.nama = "Mila";
+      //   dua.umur = 20;
+      //   dua.sifat = asik;
+
+      //   document.getElementById("nama").innerHTML = intro.nama;
+      //   document.getElementById("umur").innerHTML = intro.umur;
+      //   document.getElementById("sifat").innerHTML = intro.sifat;
+
+      //   document.getElementById("box").innerHTML = intro.mydata();
+      //   intro.setData("Aulia");
+      //   document.getElementById("box").innerHTML = intro.mydata();
+
+      //   //object prototype
+      //   function mhs(myname, umur) {
+      //     this.nama = myname;
+      //     this.umur = umur;
+      //   }
+      //   mhs.prototype.asal = "jepara";
+      //   var avis = new mhs("Avisa", 19);
+      //   var au = new mhs("Aurelia", 19);
+
+      //   document.getElementById("box").innerHTML = au.asal;
+    </script>
+  </body>
+</html>

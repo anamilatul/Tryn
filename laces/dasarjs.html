@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan</title>
+
+    <style>
+      #wrap {
+        background-color: aqua;
+        font-size: 25px;
+        color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="kucing.jpg" alt="kucing" height="500px" />
+    <div id="wrap"></div>
+
+    <!-- <script src="main.js"></script> -->
+    <script>
+      //deklarasi variabel
+      //nama hanya bisa dimulai hurung/ $/_
+      //hanya bisa mengandung angka, huruf, $ dan _
+      // var x = 2002;
+
+      //   //tipe data
+      //   //1.String
+      // var text = "Ana";
+      // //   //2.number
+      // //   var angka = 1000;
+      // var angka1 = 100.5;
+      // var angka2 = 10045.54556;
+
+      //   var angka3 = angka + angka1;
+      //   angka3++;
+
+      // //metode number
+      // //toFixed()
+      // var angkanew = angka2.toFixed(2); //ambil 2 dibelakang koma
+      // //toString()
+      // var angkanew = angka1.toString() + angka2;
+      // //random()
+      // var angkanew = Math.random().toFixed(2);
+      // //MON
+      // var angkanew = Math.min(3, 2, 4);
+      // //max
+      // var angkanew = Math.max(angka1 + angka2);
+      //round();pembulatan
+      // var angkanew = Math.round(249, 459);
+      // //ceil();pembulatan keangka atasnya
+      // var angkanew = Math.ceil(267, 5);
+      // //floor();pembualatan ke angka yg ada didepan koma
+      // var angkanew = Math.floor(231.56);
+      // //random spesific formula
+      // var y = 10; //range
+      // var z = 3; //batas min
+      // var angkanew = Math.floor(Math.random() * y) + z;
+
+      // //method string
+      // //length
+      // var nama = "milatul khauliya";
+      // // var hasil = nama.length;
+      // //indexOf / search(nyari text tertentu pd string)
+      // var hasil = nama.indexOf("l");
+      // var hasil = nama.search("u");
+      // //charAt
+      // var hasil = nama.charAt(2);
+      // //toUpperCase() dan toLowerCase
+      // var hasil = nama.toUpperCase();
+      // //replace
+      // var hasil = nama.replace("milatul", "12345");
+      // //subString
+      // var hasil = nama.substring(0, 6);
+      // //substr
+      // var hasil = nama.substr(9, 4);
+      // //parseInt
+      // var name = "120.45";
+      // var hasil = parseInt(name);
+      // //parsefloat
+      // var hasil = parseFloat(name);
+
+      // var angkanew = (document.getElementById("wrap").innerHTML = hasil);
+
+      //FUNGSI di JS
+      //deklar fungsi
+      // function coba() {
+      //   alert("Selamat datang");
+      //   document.getElementById("wrap").innerHTML = "nana";
+      // }
+      // //manggil
+      // coba();
+
+      // //parameter pada fungsi
+      // function coba(nama) {
+      //   document.getElementById("wrap").innerHTML = nama;
+      // }
+      // coba("belajar terus");
+
+      // //multiple parameter
+      // function coba(nama, nama1) {
+      //   var text = nama + nama1;
+      //   document.getElementById("wrap").innerHTML = text;
+      // }
+      // coba("belajar terus", " semangatt");
+
+      // //return
+      // function coba() {
+      //   var a = "ana";
+      //   var b = "mila";
+      //   return a + b;
+      // }
+      // document.getElementById("wrap").innerHTML = coba();
+
+      //SCOPE
+      //global var
+      // var text = "semangat";
+      // function coba() {
+      //   document.getElementById("wrap").innerHTML = text;
+      // }
+      // coba();
+      //lokal var
+      // function coba() {
+      //   var textnew = "milaa";
+      //   document.getElementById("wrap").innerHTML = textnew;
+      // }
+      // coba();
+
+      //Array
+      // var cobalagi = ["ana", "mila", "aulia"];
+      // // document.getElementById("wrap").innerHTML = cobalagi;
+      // document.getElementById("wrap").innerHTML = cobalagi[2];
+
+      //sort
+      //var buah = ["apel", "semangka", "lemon"];
+      // document.getElementById("wrap").innerHTML = buah.sort();
+      //reverse
+      // document.getElementById("wrap").innerHTML = buah.reverse();
+      //concat
+      // var hei = ["ana", "mila", "semangat", "yahhh"];
+      // var hei2 = ["kamu", "pasti", "bisa"];
+      //var hasil = hei.concat(hei2);
+
+      // document.getElementById("wrap").innerHTML = hasil;
+      // document.getElementById("wrap").innerHTML = hasil.join(" ");
+
+      //splice->add(mulai,dihapus,isi)
+      //hei.splice(2, 1, "ganbatte");
+      //cm remove
+      // hei.splice(2, 1);
+
+      //pop-hapus elemen akhir
+      //hei.pop();
+      //push-add newelemen
+      //hei.push("good");
+      //shift-hapus elemen awal
+      //hei.shift();
+      //unshift-add elemen didepan
+      //hei.unshift("aulia");
+
+      // document.getElementById("wrap").innerHTML = hei;
+
+      //if else
+      //dan &&
+      //atau ||
+      // var mirza = 20000;
+      // var yw = 15000;
+      // var harga = 15000;
+      // if (mirza >= harga || yw >= harga) {
+      //   document.getElementById("wrap").innerHTML = "uang anda cukup";
+      // } else {
+      //   // document.getElementById("wrap").innerHTML = "uang tidak cukup";
+      //   alert("uang tidak cukup");
+      // }
+
+      //nested if
+      // var ibu = 100000;
+      // var ayah = 30000;
+      // var barang = 40000;
+
+      // if (ibu > barang) {
+      //   if (ibu > barang * 2) {
+      //     alert("ibu bisa beli 2 barang");
+      //   } else {
+      //     alert("cuma bisa beli satu");
+      //   }
+      // }
+
+      // //switch case
+      // var nama = "ana";
+      // switch (nama) {
+      //   case "Endy":
+      //     alert("namaku endy");
+      //     break;
+      //   case "ana":
+      //     alert("namaku ana");
+      //     break;
+      //   case "mila":
+      //     alert("namaku mila");
+      //     break;
+      //   default:
+      //     alert("inputan salah");
+      // }
+
+      // //for loop
+      // //(mulai;sampai;perpindahan)
+      // for (var i = 0; i < 5; i++) {
+      //   alert(i);
+      // }
+
+      //while loop
+      // //1.
+      // var i = 0;
+      // while (i < 5) {
+      //   alert(i);
+      //   i++;
+      // }
+
+      //2.
+      // var i = 0;
+      // var text = "";
+      // while (i < 5) {
+      //   text += "<br>angkanya adalah " + i;
+      //   i++;
+      // }
+      // document.getElementById("wrap").innerHTML = text;
+
+      //do-while
+      var i = 5;
+      var text = "";
+      do {
+        text += "<br>angkanya adalah " + i;
+        i++;
+      } while (i < 5);
+      document.getElementById("wrap").innerHTML = text;
+    </script>
+  </body>
+</html>
